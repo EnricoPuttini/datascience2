@@ -947,6 +947,10 @@ st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 # ═══════════════════════════════════════════════════════════════════════════════
 # CONCLUSÃO GERAL
 # ═══════════════════════════════════════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONCLUSÃO GERAL 
+# ═══════════════════════════════════════════════════════════════════════════════
+
 st.markdown("""
 <div class="chapter-header">Conclusão Geral</div>
 <div class="chapter-title">O Que o Brasileirão 2025 Nos Ensina?</div>
@@ -984,35 +988,30 @@ with col_p:
         texto_defesa = "Ataque e defesa têm impacto similar, com leve vantagem do ataque."
 
     st.markdown(f"""
-    <div style="padding-top:1rem;">
-
-        <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #00d4aa;">
-            <b>1️⃣ Atacar Bem</b><br>
-            <span style="color:#00d4aa;">r = {corr_atk:.2f}</span> — correlação forte entre gols marcados e pontos.
-        </div>
-
-        <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #ff8c42;">
-            <b>2️⃣ Defender Bem</b><br>
-            <span style="color:#ff8c42;">r = {corr_def_neg:.2f}</span> — {texto_defesa}
-        </div>
-
-        <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #aa55ff;">
-            <b>3️⃣ Consistência</b><br>
-            <span style="color:#aa55ff;">r = {corr_std:.2f}</span> — times irregulares pontuam menos.
-        </div>
-
-        <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #0099ff;">
-            <b>4️⃣ Fator Casa</b><br>
-            <span style="color:#0099ff;">{vitorias_casa/total*100:.0f}%</span> de vitórias do mandante.
-        </div>
-
+<div style="padding-top:1rem;">
+    <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #00d4aa;">
+        <b>1️⃣ Atacar Bem</b><br>
+        <span style="color:#00d4aa;">r = {corr_atk:.2f}</span> — correlação forte entre gols marcados e pontos.
     </div>
-    """, unsafe_allow_html=True)
+    <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #ff8c42;">
+        <b>2️⃣ Defender Bem</b><br>
+        <span style="color:#ff8c42;">r = {corr_def_neg:.2f}</span> — {texto_defesa}
+    </div>
+    <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #aa55ff;">
+        <b>3️⃣ Consistência</b><br>
+        <span style="color:#aa55ff;">r = {corr_std:.2f}</span> — times irregulares pontuam menos.
+    </div>
+    <div style="background:#111827; padding:12px; margin-bottom:10px; border-left:4px solid #0099ff;">
+        <b>4️⃣ Fator Casa</b><br>
+        <span style="color:#0099ff;">{vitorias_casa/total*100:.0f}%</span> de vitórias do mandante.
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # Tabela final
 st.markdown("""
 <div class="insight-box" style="margin-top:1.5rem; margin-bottom:1rem;">
-    <div class="insight-title">📋 Tabela Classificatória Completa · Primeiras 10 Rodadas</div>
+    <div class="insight-title"> Tabela Classificatória Completa · Primeiras 10 Rodadas</div>
     <div class="insight-text">Todos os indicadores analisados ao longo do dashboard, reunidos em uma visão única.</div>
 </div>
 """, unsafe_allow_html=True)
