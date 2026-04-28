@@ -127,7 +127,7 @@ fig1.update_xaxes(showgrid=True, gridcolor="#f0f0f0", title_font_size=12)
 fig1.update_yaxes(showgrid=True, gridcolor="#f0f0f0", title_font_size=12)
 st.plotly_chart(fig1, use_container_width=True)
 
-st.markdown('<div class="insight-box"><strong>Sim, atacar bem importa muito.</strong> A correlação de 0,74 entre gols marcados e pontos é a mais alta entre as variáveis ofensivas. Times que marcam mais tendem a pontuar mais — mas eficiência é tão importante quanto volume: Flamengo (19 GM, 21 pts) e Botafogo (10 GM, 12 pts) ilustram que o aproveitamento faz diferença.</div>', unsafe_allow_html=True)
+st.markdown('<div class="insight-box"><strong>Sim, atacar bem importa muito.</strong> A correlação de 0,72 entre gols marcados e pontos é a mais alta entre as variáveis ofensivas. Times que marcam mais tendem a pontuar mais — mas eficiência é tão importante quanto volume: Flamengo (19 GM, 21 pts) e Botafogo (10 GM, 12 pts) ilustram que o aproveitamento faz diferença.</div>', unsafe_allow_html=True)
 
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
@@ -185,7 +185,7 @@ with col_c:
         st.progress(val)
         st.caption(f"r = {val:.2f}")
 
-st.markdown('<div class="insight-box green"><strong>Marcar é mais determinante que defender.</strong> A correlação de gols marcados com pontos (0,74) supera a de gols sofridos (−0,58). O saldo de gols, que combina os dois, apresenta a maior correlação de todas: 0,84. Times que atacam e defendem bem ao mesmo tempo — como Palmeiras (SG +5) e Flamengo (SG +15) — dominam a tabela.</div>', unsafe_allow_html=True)
+st.markdown('<div class="insight-box green"><strong>Marcar é mais determinante que defender.</strong> A correlação de gols marcados com pontos (0,72) supera a de gols sofridos (−0,7). O saldo de gols, que combina os dois, apresenta a maior correlação de todas: 0,81. Times que atacam e defendem bem ao mesmo tempo — como Palmeiras (SG +5) e Flamengo (SG +15) — dominam a tabela.</div>', unsafe_allow_html=True)
 
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
@@ -248,7 +248,7 @@ with col_r:
     fig3b.update_yaxes(showgrid=True, gridcolor="#f0f0f0")
     st.plotly_chart(fig3b, use_container_width=True)
 
-st.markdown('<div class="insight-box amber"><strong>Consistência separa os líderes dos demais.</strong> O G4 concentra pontuações altas e variação baixa — são times que ganham com regularidade (DP ≈ 0,84). A zona de rebaixamento tem pontuações baixas e alta variação (DP ≈ 2,16): os times oscilam muito e não sustentam sequências positivas. A irregularidade quase sempre garante derrota.</div>', unsafe_allow_html=True)
+st.markdown('<div class="insight-box amber"><strong>Consistência separa os líderes dos demais.</strong> O G4 concentra pontuações altas e variação baixa — são times que ganham com regularidade (DP ≈ 0,96). A zona de rebaixamento tem pontuações baixas e alta variação (DP ≈ 2,71): os times oscilam muito e não sustentam sequências positivas. A irregularidade quase sempre garante derrota.</div>', unsafe_allow_html=True)
 
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
